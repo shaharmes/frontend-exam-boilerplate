@@ -4,9 +4,65 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/smiley-icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
     <title>GRUnitech FE Exam</title>
   </head>
   <body>
+    <h1>Currency Converter</h1>
+
+    <section class="currency-converter-form">
+      <form id="currency-converter-form" action="">
+          <label for="currency-from">Currency</label>
+          <select id="currency-from" name="currency-from" required>
+            <option value="USD">USD (United States Dollar)</option>
+            <option value="EUR">EUR (Euro)</option>
+            <option value="GBP">GBP (Great Britain Pound)</option>
+            <option value="CAD">CAD (Canadian Dollar)</option>
+            <option value="AUD">AUD (Australian Dollar)</option>
+            <option value="GPY">GPY (Japanese Yen)</option>
+          </select><br>
+          <label for="date">Exchange Date</label>
+          <input type="date" id="date" name="date" required /><br>
+          <button type="submit">Submit</button>
+        <div class="result">
+          Exchange Rate to ILS: <span id="exchangeResult">3.452</span>
+        </div>
+      </form>
+    </section>
+
+    <section class="currency-converter-table">
+      <table>
+        <thead>
+        <tr>
+          <th>Date</th>
+          <th>currency</th>
+          <th>Exchange rate</th>
+        </tr>
+        </thead>
+        <tr>
+          <td>12-01-2022</td>
+          <td>USD</td>
+          <td>3.1548</td>
+        </tr>
+        <tr>
+          <td>01-02-2021</td>
+          <td>EUR</td>
+          <td>3.276</td>
+        </tr>
+        <tr>
+          <td>25-02-2020</td>
+          <td>GPY</td>
+          <td>3.1548</td>
+        </tr>
+        
+      
+      </table>
+
+    </section>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
+
+
+
+
